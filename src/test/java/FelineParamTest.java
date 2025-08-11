@@ -27,7 +27,7 @@ public class FelineParamTest {
     }
 
     @Test
-    public void getKittens() {
+    public void getKittensTest() {
         assertEquals("Неправильное количество котят для кошачьих",
                 expectedKittensCount,
                 feline.getKittens(inputKittensCount));

@@ -10,19 +10,19 @@ public class FelineTest {
     private final Feline feline = new Feline();
 
     @Test
-    public void eatMeat() throws Exception {
+    public void eatMeatTest() throws Exception {
         List<String> actual = feline.eatMeat();
         assertEquals("Неправильный список еды для кошачьих", List.of("Животные", "Птицы", "Рыба"), actual);
     }
 
     @Test
-    public void getFamily() {
+    public void getFamilyTest() {
         String actual = feline.getFamily();
         assertEquals("Неверное семейство для кошачьих", "Кошачьи", actual);
     }
 
     @Test
-    public void getKittens() {
+    public void getKittensTest() {
         int actual = feline.getKittens();
         assertEquals("Неправильное количество котят для кошачьих", 1, actual);
     }
